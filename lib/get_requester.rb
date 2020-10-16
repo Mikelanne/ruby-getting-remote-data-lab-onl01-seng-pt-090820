@@ -1,4 +1,6 @@
 # Write your code here
+require 'open-uri'
+
 class GetRequester
   
  def initialize(url)
@@ -6,6 +8,6 @@ class GetRequester
  end 
  
  def get_response_body
-
+    uri = URI.parse(url)
  end 
 end
