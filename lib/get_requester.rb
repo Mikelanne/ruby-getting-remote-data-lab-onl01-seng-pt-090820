@@ -2,6 +2,7 @@
 require 'open-uri'
 require 'net/http'
 require 'pry'
+require 'json'
 
 class GetRequester
   
@@ -16,6 +17,6 @@ class GetRequester
  end 
  
  def parse_json
-   
+   JSON.parse(response.body)
  end
 end
