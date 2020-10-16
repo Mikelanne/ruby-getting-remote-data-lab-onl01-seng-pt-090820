@@ -1,5 +1,6 @@
 # Write your code here
 require 'open-uri'
+require 'net/http'
 
 class GetRequester
   
@@ -9,6 +10,7 @@ class GetRequester
  end 
  
  def get_response_body
-
+    response =  NET::HTTP.get_response(uri)
+    response.body
  end 
 end
