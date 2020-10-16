@@ -11,7 +11,7 @@ class GetRequester
  
  def get_response_body
    binding.pry
-  uri = URI.parse(self.url)
+  uri = URI.parse(@url)
   response =  NET::HTTP.get_response(self)
   response.body
  end 
