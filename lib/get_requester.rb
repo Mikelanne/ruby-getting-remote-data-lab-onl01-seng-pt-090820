@@ -5,9 +5,10 @@ class GetRequester
   
  def initialize(url)
    @url = url
+   uri = URI.parse(url)
  end 
  
  def get_response_body
-    uri = URI.parse(url)
+
  end 
 end
